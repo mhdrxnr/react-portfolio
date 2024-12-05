@@ -1,5 +1,5 @@
 import {HERO_CONTENT} from "../constants";
-import profPic from "../assets/kevinRushProfile.png";
+import profPic from "../assets/mhdprofile.jpg";
 import { motion } from "motion/react";
 
 const container = (delay)=>({
@@ -37,9 +37,12 @@ export default function hero() {
         <div className="w-full lg:w-1/2 lg:p-8">
             <div className="flex justify-center">
                 <motion.img
-                initial={{x:100, opacity:0}}
-                animate={{x:0, opacity: 1}}
-                transition={{duration: 1, delay: 1.2}}
+                initial={{ scale: 0 }} animate={{ scale: 1 } }
+                transition={{duration: 1, delay: .5}}
+                // initial={{x:100, opacity:0}}
+                // animate={{x:0, opacity: 1}}
+                // transition={{duration: 1, delay: 1.2}}
+                className="rounded-2xl"
                  src={profPic} alt="profile pic" />
             </div>
         </div>
